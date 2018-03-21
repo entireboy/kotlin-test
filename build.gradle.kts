@@ -38,6 +38,7 @@ repositories {
 dependencies {
     compile("khttp:khttp:0.1.0")
     compile("com.fasterxml.jackson.module:jackson-module-kotlin:2.9.4.1")
+    compileOnly("org.projectlombok:lombok:1.16.20")
 
     compile(kotlinModule("stdlib-jdk8", kotlin_version))
     testCompile("junit", "junit", "4.12")

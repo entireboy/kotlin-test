@@ -1,8 +1,7 @@
 package kr.leocat.test.http.client
 
 import com.fasterxml.jackson.module.kotlin.*
-import kr.leocat.test.http.client.dto.IpDto
-import khttp.get
+import kr.leocat.test.http.client.dto.KotlinIpDto
 import org.junit.Test
 
 class KotlinHttpTest {
@@ -13,11 +12,11 @@ class KotlinHttpTest {
         val mapper = jacksonObjectMapper()
 
 //        val json = get(url).text
-//        val ipDto = mapper.readValue<IpDto>(json)
+//        val ipDto = mapper.readValue<KotlinIpDto>(json)
 //        println(ipDto)
 
-        val chttp = Chttp()
-        val dto = chttp.get<IpDto>(url, mapper)
+        val chttp = MyHttp()
+        val dto = chttp.get<KotlinIpDto>(url, mapper)
         println("Result by kotlin: ${dto}")
     }
 
