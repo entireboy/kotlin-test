@@ -1,0 +1,14 @@
+### Intellij ###
+.idea
+build
+out
+
+### Gradle ###
+.gradle
+**/build/
+
+### Kotlin ###
+
+### Java ###
+.class
+hs_err_pid*
