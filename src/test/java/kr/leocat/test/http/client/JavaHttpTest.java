@@ -12,9 +12,9 @@ public class JavaHttpTest {
         ObjectMapper mapper = new ObjectMapper();
 
         MyHttp myHttp = new MyHttp();
-//        KotlinIpDto ipDto = myHttp.anotherGet(url, mapper, KotlinIpDto.class);
-        JavaIpDto ipDto = myHttp.anotherGet(url, mapper, JavaIpDto.class);
-//        KotlinIpDto ipDto = myHttp.<KotlinIpDto>get(url, mapper);
+//        KotlinIpDto ipDto = myHttp.get2(url, mapper, KotlinIpDto.class);
+        JavaIpDto ipDto = myHttp.get2(url, mapper, JavaIpDto.class);
+//        KotlinIpDto ipDto = myHttp.<KotlinIpDto>get1(url, mapper);
         System.out.println("Result by java: " + ipDto);
     }
 
